@@ -55,7 +55,17 @@ print("*** PROBLEM 4.0: BASEBALL WINNERS POSITION")
     
 
 //Test your code by changing leaguePosition values and observe the results.
-
+let leaguePosition = 6
+switch leaguePosition {
+case 1:
+    print("Champions")
+case 2:
+    print("Runners up")
+case 3:
+    print("Third place")
+default:
+    print("Bad season!")
+}
 //Now format the code above. How? Select the code (highlight) and use CONTROL-I. It usually corrects it to the
 
 print("\n")
@@ -65,7 +75,12 @@ print("*** PROBLEM 4.1: MEDAL WINNERS")
     
     
 // Write a new switch statement that prints "Medal winner" if leaguePosition is within the range of 1-3 (case 1, case 2, case 3). Otherwise, print "No medal awarded" (default).
-    
+switch leaguePosition {
+case 1-3:
+    print("Medal winner")
+default:
+    print("No medal awarded")
+}
     
 //Be sure test each case code by changing leaguePosition values
 
@@ -105,7 +120,21 @@ print("*** PROBLEM 4.2: HEART RANGE STATEMENTS")
  161-180: "You are in the Hard zone. Activity in this zone increases maximum performance capacity for shorter sessions."
  181-200: "You are in the Maximum zone. Activity in this zone helps fit athletes develop speed."
  If currentHR is above the listed zones, print some kind of warning asking the user to slow down (default).
- 
  */
 
 //First declare a constant currentHR and for now give it a value of 128.
+let currentHR = 1
+switch currentHR {
+case 100...120:
+    print("You are in the very Light zone. Activity in this zone helps with recovery.")
+case 121...140:
+    print("You are in the Light zone. Activity in this zone helps improve basice endurance and fat burning.")
+case 141...160:
+    print("You are in the Moderate zone. Activity in this zone helps improve aerobic fitness.")
+case 161...180:
+    print("You are in the Hard zone. Activity in this zone increases maximum performance capacity for shorter sessions.")
+case 181...200:
+    print("You are in the Maximum zone. Activity in this zone helps fit athletes develop speed.")
+default:
+    print("Please slow down.")
+}
